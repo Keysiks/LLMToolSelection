@@ -1,0 +1,25 @@
+model,tier,number_of_queries,avg_tools_in_tier,precision,recall,f1
+anthropic/claude-haiku-4.5,Tier 1,161,1.832,0.994,0.925,0.948
+anthropic/claude-haiku-4.5,Tier 2,276,3.902,1.0,0.611,0.74
+anthropic/claude-haiku-4.5,Tier 3,313,8.064,0.99,0.316,0.467
+anthropic/claude-haiku-4.5,Tier 4+,15,11.6,1.0,0.243,0.375
+openai/gpt-5-mini,Tier 1,161,1.832,0.994,0.932,0.952
+openai/gpt-5-mini,Tier 2,276,3.902,0.996,0.598,0.729
+openai/gpt-5-mini,Tier 3,313,8.064,0.992,0.315,0.465
+openai/gpt-5-mini,Tier 4+,15,11.6,1.0,0.242,0.3730
+qwen/qwen-2.5-coder-32b-instruct,Tier 1,161,1.832,0.801,0.761,0.774
+qwen/qwen-2.5-coder-32b-instruct,Tier 2,276,3.902,0.741,0.448,0.547
+qwen/qwen-2.5-coder-32b-instruct,Tier 3,313,8.064,0.742,0.22,0.331
+qwen/qwen-2.5-coder-32b-instruct,Tier 4+,15,11.6,0.667,0.158,0.251
+qwen/qwen2.5-coder-7b-instruct,Tier 1,161,1.832,0.916,0.873,0.887
+qwen/qwen2.5-coder-7b-instruct,Tier 2,276,3.902,0.954,0.591,0.711
+qwen/qwen2.5-coder-7b-instruct,Tier 3,313,8.064,0.939,0.318,0.461
+qwen/qwen2.5-coder-7b-instruct,Tier 4+,15,11.6,1.0,0.249,0.38
+qwen/qwen3-235b-a22b-thinking-2507,Tier 1,161,1.832,1.0,0.925,0.95
+qwen/qwen3-235b-a22b-thinking-2507,Tier 2,276,3.902,0.993,0.586,0.719
+qwen/qwen3-235b-a22b-thinking-2507,Tier 3,313,8.064,0.989,0.309,0.459
+qwen/qwen3-235b-a22b-thinking-2507,Tier 4+,15,11.6,1.0,0.224,0.356
+x-ai/grok-code-fast-1,Tier 1,161,1.832,0.994,0.916,0.942
+x-ai/grok-code-fast-1,Tier 2,276,3.902,1.0,0.591,0.723
+x-ai/grok-code-fast-1,Tier 3,313,8.0614,0.992,0.307,0.456
+x-ai/grok-code-fast-1,Tier 4+,15,11.6,1.0,0.236,0.374
