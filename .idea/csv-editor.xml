@@ -10,6 +10,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/data/stabletoolbench/results/PositionBias/position_bias_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/stabletoolbench/results/PositionBias/variance_jaccard_metrics.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/toollinkos/results/PositionBias/position_bias_raw.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/toollinkos/results/PositionBias/variance_jaccard_metrics.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/data/toollinkos/results/summary_task.csv">
           <value>
             <Attribute>
