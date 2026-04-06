@@ -8,7 +8,7 @@ from matplotlib.lines import Line2D
 
 
 DATASETS = ["stabletoolbench", "toollinkos", "ultratool", "LiveMcpBench"]
-NOISE_TYPES = [("random", "Случайный шум"), ("similarity", "Схожий шум")]
+NOISE_TYPES = [("random", "Random Noise"), ("similarity", "Similarity Noise")]
 TIERS = ["Tier 1", "Tier 2"]
 NOISE_LEVELS = [1, 3, 5, 7, 9]
 
@@ -88,7 +88,7 @@ def plot_benchmark_panels(
     style_map: dict[str, dict[str, str]],
 ) -> None:
     fig, axes = plt.subplots(2, 2, figsize=(14, 9), sharex=True, sharey=True)
-    fig.suptitle(f"{dataset_name}: F1 vs уровень шума", fontsize=16, fontweight="bold")
+    fig.suptitle(f"{dataset_name}: F1 vs Noise Level", fontsize=16, fontweight="bold")
 
     for row_idx, (noise_type, noise_title) in enumerate(NOISE_TYPES):
         for col_idx, tier in enumerate(TIERS):
@@ -119,7 +119,7 @@ def plot_benchmark_panels(
             ax.grid(True, linestyle="--", alpha=0.35)
 
             if row_idx == 1:
-                ax.set_xlabel("Уровень шума n")
+                ax.set_xlabel("Noise Level n")
             if col_idx == 0:
                 ax.set_ylabel("F1")
 
@@ -127,7 +127,7 @@ def plot_benchmark_panels(
                 ax.text(
                     0.5,
                     0.5,
-                    "Нет данных",
+                    "No data",
                     transform=ax.transAxes,
                     ha="center",
                     va="center",
@@ -152,12 +152,12 @@ def plot_benchmark_panels(
         loc="lower center",
         ncol=3,
         frameon=False,
-        bbox_to_anchor=(0.5, 0.01),
+        bbox_to_anchor=(0.5, 0.015),
     )
-    fig.tight_layout(rect=(0.0, 0.08, 1.0, 0.93))
+    fig.tight_layout(rect=(0.0, 0.09, 1.0, 0.93))
 
     output_path = FIGURES_DIR / f"{dataset_name}_noise_degradation_2x2.pdf"
-    fig.savefig(output_path, bbox_inches="tight")
+    fig.savefig(output_path)
     plt.close(fig)
     print(f"✅ Сохранено: {output_path}")
 
@@ -196,7 +196,7 @@ def plot_delta_summary(
     x = np.arange(len(datasets_present))
     width = 0.12
 
-    fig, ax = plt.subplots(figsize=(14, 6))
+    fig, ax = plt.subplots(figsize=(14, 7.5))
 
     for idx, model_name in enumerate(model_order):
         offsets = (idx - (len(model_order) - 1) / 2) * width
@@ -220,21 +220,47 @@ def plot_delta_summary(
     ax.axhline(0.0, color="black", linewidth=1.2)
     ax.set_xticks(x)
     ax.set_xticklabels(datasets_present)
-    ax.set_ylabel("ΔF1 = F1(random) - F1(similarity) при n=9")
-    ax.set_title("Итоговая дельта по бенчмаркам (усреднение по Tier 1/Tier 2)")
+    ax.set_xlabel("Benchmark")
+    ax.set_ylabel("ΔF1 = F1(random) - F1(similarity) at n=9")
+    ax.set_title("Overall Delta by Benchmark (averaged over Tier 1/Tier 2)")
     ax.grid(True, axis="y", linestyle="--", alpha=0.35)
-    ax.legend(loc="lower center", bbox_to_anchor=(0.5, -0.22), ncol=3, frameon=False)
 
-    fig.tight_layout(rect=(0.0, 0.1, 1.0, 1.0))
+    legend_handles = [
+        Line2D(
+            [0],
+            [0],
+            color=style_map[m]["color"],
+            marker="s",
+            linewidth=0,
+            markersize=10,
+            label=model_label(m),
+        )
+        for m in model_order
+    ]
+
+    fig.legend(
+        handles=legend_handles,
+        loc="lower center",
+        bbox_to_anchor=(0.5, 0.02),
+        ncol=3,
+        frameon=False,
+    )
+
+    fig.subplots_adjust(left=0.11, right=0.98, top=0.90, bottom=0.24)
     output_path = FIGURES_DIR / "delta_n9_by_benchmark.pdf"
-    fig.savefig(output_path, bbox_inches="tight")
+    fig.savefig(output_path)
     plt.close(fig)
     print(f"✅ Сохранено: {output_path}")
 
 
 def main() -> None:
-    plt.rcParams["font.family"] = "Times New Roman"
-    plt.rcParams["font.serif"] = ["Times New Roman", "Times", "DejaVu Serif"]
+    plt.rcParams["font.family"] = "sans-serif"
+    plt.rcParams["font.sans-serif"] = [
+        "DejaVu Sans",
+        "Arial",
+        "Helvetica",
+        "Liberation Sans",
+    ]
     sns.set_theme(style="whitegrid", context="talk")
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
