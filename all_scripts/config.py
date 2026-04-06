@@ -8,12 +8,18 @@ MODELS_TO_TEST = [
     "openai/gpt-5-mini"
 ]
 
+OPENROUTER_API_KEY = ""  # Вставь свой ключ
+
+
 MAX_CONCURRENT_REQUESTS = 20  # Сколько запросов слать одновременно
 MAX_RETRIES = 3  # Сколько раз повторять при ошибке API
 DATA_PATH = "../data/"
-DATASET_NAME = "toolret"
+DATASET_NAME = "ultratool"
 RESULTS_DIR = DATA_PATH +  DATASET_NAME + "/results/"
 
 INPUT_FILE = DATA_PATH +  DATASET_NAME + "/benchmarks_enriched.json"
+
+
 OUTPUT_CSV = RESULTS_DIR + f"summary_task_{DATASET_NAME[:-1]}.csv"
 SUMMARY_CSV = RESULTS_DIR + f"summary_task_{DATASET_NAME[:-1]}.csv"
+NOISE_LEVELS = [1, 3, 5, 7, 9]

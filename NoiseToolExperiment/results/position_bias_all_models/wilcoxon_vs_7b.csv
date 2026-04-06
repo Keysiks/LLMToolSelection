@@ -1,0 +1,11 @@
+benchmark,base_model,compared_model,n_pairs,base_mean_jaccard,compared_mean_jaccard,delta_compared_minus_base,wilcoxon_stat,p_value,significant_0_05
+stabletoolbench,qwen/qwen2.5-coder-7b-instruct,anthropic/claude-haiku-4.5,81,0.641586,0.936919,0.295334,153.0,0.0,True
+stabletoolbench,qwen/qwen2.5-coder-7b-instruct,openai/gpt-5-mini,81,0.641586,0.928092,0.286507,234.5,0.0,True
+stabletoolbench,qwen/qwen2.5-coder-7b-instruct,qwen/qwen-2.5-coder-32b-instruct,81,0.641586,0.939936,0.298351,106.5,0.0,True
+stabletoolbench,qwen/qwen2.5-coder-7b-instruct,qwen/qwen3-235b-a22b-thinking-2507,81,0.641586,0.941838,0.300253,107.0,0.0,True
+stabletoolbench,qwen/qwen2.5-coder-7b-instruct,x-ai/grok-code-fast-1,81,0.641586,0.952666,0.31108,77.0,0.0,True
+toollinkos,qwen/qwen2.5-coder-7b-instruct,anthropic/claude-haiku-4.5,93,0.60283,0.795558,0.192729,714.5,0.0,True
+toollinkos,qwen/qwen2.5-coder-7b-instruct,openai/gpt-5-mini,93,0.60283,0.810459,0.20763,475.0,0.0,True
+toollinkos,qwen/qwen2.5-coder-7b-instruct,qwen/qwen-2.5-coder-32b-instruct,93,0.60283,0.861597,0.258767,157.5,0.0,True
+toollinkos,qwen/qwen2.5-coder-7b-instruct,qwen/qwen3-235b-a22b-thinking-2507,93,0.60283,0.909239,0.30641,75.0,0.0,True
+toollinkos,qwen/qwen2.5-coder-7b-instruct,x-ai/grok-code-fast-1,93,0.60283,0.935908,0.333079,59.0,0.0,True

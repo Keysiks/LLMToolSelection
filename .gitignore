@@ -1,5 +1,6 @@
 venv
 .env
+*.xlsx
 data/LiveMcpBench/benchmarks_enriched.json
 data/stabletoolbench/benchmarks_enriched.json
 data/toollinkos/benchmarks_enriched.json

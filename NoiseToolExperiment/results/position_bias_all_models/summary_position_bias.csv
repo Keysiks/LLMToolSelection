@@ -1,0 +1,13 @@
+benchmark,model,queries_used,mean_jaccard,std_jaccard,mean_variance_selected_size,mean_selected_size,mean_permutations_used
+stabletoolbench,anthropic/claude-haiku-4.5,81,0.9369,0.1277,0.0788,2.4049,10.0
+stabletoolbench,openai/gpt-5-mini,81,0.9281,0.141,0.1495,2.5099,10.0
+stabletoolbench,qwen/qwen-2.5-coder-32b-instruct,81,0.9399,0.1303,0.0938,1.9309,10.0
+stabletoolbench,qwen/qwen2.5-coder-7b-instruct,81,0.6416,0.2652,1.0341,1.7506,10.0
+stabletoolbench,qwen/qwen3-235b-a22b-thinking-2507,81,0.9418,0.1285,0.0379,2.4358,10.0
+stabletoolbench,x-ai/grok-code-fast-1,81,0.9527,0.1023,0.1212,2.4889,10.0
+toollinkos,anthropic/claude-haiku-4.5,93,0.7956,0.2399,0.5941,1.4591,10.0
+toollinkos,openai/gpt-5-mini,93,0.8105,0.1895,0.4759,2.3806,10.0
+toollinkos,qwen/qwen-2.5-coder-32b-instruct,93,0.8616,0.0998,0.2803,2.6785,10.0
+toollinkos,qwen/qwen2.5-coder-7b-instruct,93,0.6028,0.1806,1.4473,2.0989,10.0
+toollinkos,qwen/qwen3-235b-a22b-thinking-2507,93,0.9092,0.1042,0.1542,2.6022,10.0
+toollinkos,x-ai/grok-code-fast-1,93,0.9359,0.1274,0.2223,2.6419,10.0

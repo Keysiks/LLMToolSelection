@@ -14,8 +14,9 @@ OPENROUTER_API_KEY = ""
 MAX_CONCURRENT_REQUESTS = 20  # Сколько запросов слать одновременно
 MAX_RETRIES = 3  # Сколько раз повторять при ошибке API
 DATA_PATH = "../data/"
-DATASET_NAME = "toollinkos"
+DATASET_NAME = "stabletoolbench"
 RESULTS_DIR = DATA_PATH +  DATASET_NAME + "/results/"
 
 INPUT_FILE = DATA_PATH +  DATASET_NAME + "/benchmarks_enriched.json"
+INPUT_TOOLS = DATA_PATH + DATASET_NAME + "/tools_expanded.json"
 NOISE_LEVELS = [1, 3, 5, 7, 9]

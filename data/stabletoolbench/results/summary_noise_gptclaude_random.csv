@@ -1,0 +1,11 @@
+model,tier,noise_level,precision,recall,f1
+anthropic/claude-haiku-4.5,Tier 1,1,0.988,0.922,0.944
+anthropic/claude-haiku-4.5,Tier 1,3,0.988,0.925,0.946
+anthropic/claude-haiku-4.5,Tier 1,5,0.988,0.919,0.942
+anthropic/claude-haiku-4.5,Tier 1,7,0.981,0.922,0.942
+anthropic/claude-haiku-4.5,Tier 1,9,0.988,0.919,0.942
+anthropic/claude-haiku-4.5,Tier 2,1,0.986,0.607,0.731
+anthropic/claude-haiku-4.5,Tier 2,3,0.989,0.6,0.727
+anthropic/claude-haiku-4.5,Tier 2,5,0.975,0.597,0.722
+anthropic/claude-haiku-4.5,Tier 2,7,0.984,0.606,0.731
+anthropic/claude-haiku-4.5,Tier 2,9,0.982,0.601,0.727

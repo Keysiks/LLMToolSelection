@@ -91,7 +91,7 @@ def prepare_dataset(data):
         if len(gt_tools_objs) != count: continue
 
         for n in NOISE_LEVELS:
-            # Сколько шума добавить (N * количество правильных)
+            # Сколько шума добавить? (N * количество правильных)
             num_noise_needed = count * n
 
             # --- Random ---
@@ -230,7 +230,7 @@ async def main():
 
         summary.sort_values(by=['model', 'tier', 'noise_level'], inplace=True)
 
-        filename = os.path.join(RESULTS_DIR, f"summary_noise_qwen7b_{noise_type}.csv")
+        filename = os.path.join(RESULTS_DIR, f"summary_noise_{noise_type}.csv")
         summary.to_csv(filename, index=False)
         print(f"\n📊 Таблица ({noise_type}) сохранена: {filename}")
         print(summary.head(10))

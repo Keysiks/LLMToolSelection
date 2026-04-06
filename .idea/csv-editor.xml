@@ -3,6 +3,27 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="/NoiseToolExperiment/figures/delta_n9_summary.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/NoiseToolExperiment/results/position_bias_all_models/summary_position_bias.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/LiveMcpBench/results/summary_noise_random.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/data/LiveMcpBench/results/summary_task_LiveMcpBench.csv">
           <value>
             <Attribute>
@@ -24,6 +45,34 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/data/stabletoolbench/results/summary_noise_gptclaude_random.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/stabletoolbench/results/summary_noise_gptclaude_similarity.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/stabletoolbench/results/summary_noise_random.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/stabletoolbench/results/summary_noise_similarity.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/data/toollinkos/results/PositionBias/position_bias_raw.csv">
           <value>
             <Attribute>
@@ -38,7 +87,49 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/data/toollinkos/results/summary_noise_qwen7b_random.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/toollinkos/results/summary_noise_qwen7b_similarity.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/toollinkos/results/summary_noise_random.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/toollinkos/results/summary_noise_similarity.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/data/toollinkos/results/summary_task.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/ultratool/results/summary_noise_random.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/data/ultratool/results/summary_noise_similarity.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
